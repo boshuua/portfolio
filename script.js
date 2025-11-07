@@ -44,13 +44,20 @@ function createRepoCard(repo) {
     });
 
     const language = repo.language ? `<span class="repo-language">${repo.language}</span>` : '';
+<<<<<<< HEAD
     const description = repo.description || 'No description available for this repository.';
     const stars = repo.stargazers_count > 0 ? `<span class="repo-stats">⭐ ${repo.stargazers_count} stars</span>` : '';
     const forks = repo.forks_count > 0 ? `<span class="repo-stats">🔱 ${repo.forks_count} forks</span>` : '';
+=======
+    const description = repo.description || 'No description available';
+    const stars = repo.stargazers_count > 0 ? `<span class="repo-stats">⭐ ${repo.stargazers_count}</span>` : '';
+    const forks = repo.forks_count > 0 ? `<span class="repo-stats">🔱 ${repo.forks_count}</span>` : '';
+>>>>>>> 5e09a6c20b453978c7e87b09c06129f9f099b6a0
 
     card.innerHTML = `
         <div>
             <div class="repo-header">
+<<<<<<< HEAD
                 <div class="repo-title-section">
                     <h3>${repo.name}</h3>
                     <p class="repo-date">Updated ${lastUpdated}</p>
@@ -59,6 +66,17 @@ function createRepoCard(repo) {
             </div>
             <p class="repo-description">${description}</p>
             ${(stars || forks) ? `<div class="repo-stats-container">${stars}${forks}</div>` : ''}
+=======
+                <h3>${repo.name}</h3>
+                ${language}
+            </div>
+            <p class="repo-date">Last Updated: ${lastUpdated}</p>
+            <p class="repo-description">${description}</p>
+            <div class="repo-stats-container">
+                ${stars}
+                ${forks}
+            </div>
+>>>>>>> 5e09a6c20b453978c7e87b09c06129f9f099b6a0
         </div>
     `;
 
