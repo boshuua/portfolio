@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Meet Me</title>
+    <title>Joshua Killey - Software Developer</title>
     <link rel="stylesheet" href="main.css">
     <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
     <script src="https://kit.fontawesome.com/ac6d0c0a18.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body id="top">
@@ -26,12 +27,12 @@
                 </div>
                 <div id="card-info">
                     <div id="info-text">
-                        <h3>Hey There!</h3>
+                        <h3>Hey There! 👋</h3>
                         <p>
-                            I am currently a degree apprentice at a company in weston-super-mare.
-                            I am atteneding a course at Weston College and developing new pieces of code for my company
-                            and for myself.
-                            <a id="link" href="#projects">Projects</a> down below in this page.
+                            I'm a Degree Apprentice pursuing a BSc in Digital and Technology Solutions at UCW,
+                            while working at a company in Weston-Super-Mare. I'm passionate about software development,
+                            creating innovative solutions, and continuously learning new technologies.
+                            Check out my <a id="link" href="#projects">Projects</a> below!
                         </p>
                     </div>
                     <table>
@@ -40,8 +41,8 @@
                             <td class="row-data">Joshua</td>
                         </tr>
                         <tr>
-                            <td class="row-cat">Experience</td>
-                            <td class="row-data">4 Years</td>
+                            <td class="row-cat">Role</td>
+                            <td class="row-data">Degree Apprentice / Software Developer</td>
                         </tr>
                         <tr>
                             <td class="row-cat">Location</td>
@@ -66,20 +67,24 @@
                 <h2>SKILLS</h2>
                 <div id="skill-card-container">
                     <div class="skill-card">
-                        <h3>HTML & CSS</h3>
-                        <p>Basic Html & Css skills & fundamentals</p>
+                        <div class="skill-icon">🌐</div>
+                        <h3>Web Development</h3>
+                        <p>HTML, CSS, JavaScript, TypeScript</p>
                     </div>
                     <div class="skill-card">
-                        <h3>C++</h3>
-                        <p>Basic C++ and procedural programming designs</p>
+                        <div class="skill-icon">💻</div>
+                        <h3>Programming</h3>
+                        <p>Python, C++, PHP</p>
                     </div>
                     <div class="skill-card">
-                        <h3>Bussines Security</h3>
-                        <p>Kali Linux | Hashing</p>
+                        <div class="skill-icon">🔒</div>
+                        <h3>Cybersecurity</h3>
+                        <p>Kali Linux, Hashing, Security Practices</p>
                     </div>
                     <div class="skill-card">
+                        <div class="skill-icon">🗄️</div>
                         <h3>Database Design</h3>
-                        <p>Leaning PHP and SQL</p>
+                        <p>SQL, PHP, Data Management</p>
                     </div>
                 </div>
             </div>
@@ -105,26 +110,12 @@
                     </div>
                 </div>
                 <div id="projects" class="edu-prj-cards-cont">
-                    <h2>Projects</h2>
-                    <a class="prj-card edu-prj-card" href="https://github.com/boshuua/MovieWatchlist" target="_blank">
-                        <div>
-                            <h3>MovieWatchlist</h3>
-                            <p>Last Updated at 18/7/24</p>
-                            <p>A command line program that reads a csv of selected movies that can be added to a list.
-                                The list can be sorted by genre, rating, and year. The list can also be saved and
-                                loaded.</p>
-                            </p>
+                    <h2>Projects <span class="github-badge">Auto-updated from GitHub</span></h2>
+                    <div id="projects-container">
+                        <div class="loading-spinner">
+                            <p>Loading projects from GitHub...</p>
                         </div>
-                    </a>
-                    <a class="prj-card edu-prj-card" href="https://github.com/boshuua/Chat-App" target="_blank">
-                        <div>
-                            <h3>Chat-App</h3>
-                            <p>Last Updated at 21/8/24</p>
-                            <p>This chat app creates a connection between as many sessions as it is open and allows
-                                users to create a username and chat across a network.</p>
-                            </p>
-                        </div>
-                    </a>
+                    </div>
                 </div>
             </div>
         </section>
